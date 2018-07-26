@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.accenture.utilities.MyListner"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.accenture.test.Registration_Test">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.accenture.test.Registration_Test -->
+      <class name="com.accenture.test.TestLogin">
+        <methods>
+          <include name="LoginInvalid"/>
+        </methods>
+      </class> <!-- com.accenture.test.TestLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="com.accenture.test.Registration_Test">
+        <methods>
+          <include name="TestRegistration"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.accenture.test.Registration_Test -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
